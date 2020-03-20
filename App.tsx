@@ -10,6 +10,7 @@ import CampusMarkers from './constants/CampusMarkers';
 import Colors from './constants/Colors';
 import OutdoorPOI from './classes/outdoorPOI';
 import PolygonsAndMarkers from './components/PolygonsAndMarkers';
+import InputBtn from './components/InputBtn';
 
 const styles = StyleSheet.create({
   container: {
@@ -91,6 +92,7 @@ class App extends Component<{}, appState> {
             transportType={transportMode.transit}
           />
         </MapView>
+        <InputBtn />
       </View>
     );
   }
